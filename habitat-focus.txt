@@ -1,0 +1,2 @@
+OBT:000035	food for human
+OBT:000019	animal feed
