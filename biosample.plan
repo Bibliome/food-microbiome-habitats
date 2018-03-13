@@ -1,0 +1,34 @@
+<alvisnlp-plan id="biosample">
+
+  <read class="XMLReader">
+    <sourcePath>biosample-split</sourcePath>
+    <xslTransform>res://XMLReader/biosample2alvisnlp.xslt</xslTransform> <!-- since alvisnlp commit 363df429a80b960febfb5022182b9d2743e4398b -->
+  </read>
+
+  <table class="TabularExport">
+    <outDir>.</outDir>
+    <corpusFile>biosample-table.txt</corpusFile>
+    <lines>documents</lines>
+    <columns>
+      @id,
+      sections:Title.contents,
+      sections:Organism.@taxid,
+      sections:Organism.contents,
+      sections:isolation_source.contents,
+      sections:host.contents,
+      sections:geo_loc_name.contents,
+      sections:lat_lon.contents
+    </columns>
+    <headers>
+      "ACCESSION",
+      "TITLE",
+      "TAXID",
+      "ORGANISM",
+      "ISOLATION SOURCE",
+      "HOST",
+      "GEOGRAPHICAL LOCATION",
+      "LATITUDE LONGITUDE"
+    </headers>
+  </table>
+
+</alvisnlp-plan>

@@ -3,3 +3,9 @@ dsmz-taxon-habitat-mappings.txt
 genbank_mappings.txt
 PubMed_lives-in.txt
 taxa+id_Bacteria.txt
+bacteria-ids.txt
+bioproject.xml
+biosample-split
+biosample-table.txt
+biosample_set.xml
+alvisnlp.log
