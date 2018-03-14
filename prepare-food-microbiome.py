@@ -221,7 +221,7 @@ for strain in Strain.ALL.itervalues():
 class FoodMicrobiomeWriter:
     HEADERS = ('TAXON ID', 'RANK', 'SPECIES', 'TAXON NAME', 'SOURCE TYPE', 'HABITATS', 'FOOD', 'SURFACE FORMS', 'SOURCES')
 
-    def __init__(self, max_taxa, fn_pattern = 'food-microbiome-habitats_%02d.txt'):
+    def __init__(self, max_taxa, fn_pattern = 'output/food-microbiome-habitats/food-microbiome-habitats_%02d.txt'):
         self.max_taxa = max_taxa
         self.fn_pattern = fn_pattern
         self.ntaxa = 0

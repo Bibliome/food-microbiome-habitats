@@ -6,7 +6,7 @@
   </read>
 
   <habitat-attributes class="FileMapper">
-    <mappingFile>biosample-habitat-attributes.txt</mappingFile>
+    <mappingFile>etc/biosample-habitat-attributes.txt</mappingFile>
     <targetFeatures>habitat-attribute</targetFeatures>
     <target>documents.sections</target>
     <form>@name</form>
