@@ -1,0 +1,16 @@
+biotic_relationship
+disease
+env_biome
+env_feature
+env_material
+env_package
+host
+host_sex
+host_tissue_sampled
+isolation_source
+pathogenicity
+plant_product
+rel_to_oxygen
+sample_type
+tissue
+trophic_level

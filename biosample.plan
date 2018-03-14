@@ -5,6 +5,13 @@
     <xslTransform>res://XMLReader/biosample2alvisnlp.xslt</xslTransform> <!-- since alvisnlp commit 363df429a80b960febfb5022182b9d2743e4398b -->
   </read>
 
+  <habitat-attributes class="FileMapper">
+    <mappingFile>biosample-habitat-attributes.txt</mappingFile>
+    <targetFeatures>habitat-attribute</targetFeatures>
+    <target>documents.sections</target>
+    <form>@name</form>
+  </habitat-attributes>
+
   <table class="TabularExport">
     <outDir>.</outDir>
     <corpusFile>biosample-table.txt</corpusFile>
@@ -14,21 +21,44 @@
       sections:Title.contents,
       sections:Organism.@taxid,
       sections:Organism.contents,
-      sections:isolation_source.contents,
+      sections:biotic_relationship.contents,
+      sections:disease.contents,
+      sections:env_biome.contents,
+      sections:env_feature.contents,
+      sections:env_material.contents,
+      sections:env_package.contents,
       sections:host.contents,
-      sections:geo_loc_name.contents,
-      sections:lat_lon.contents
+      sections:host_sex.contents,
+      sections:host_tissue_sampled.contents,
+      sections:isolation_source.contents,
+      sections:pathogenicity.contents,
+      sections:plant_product.contents,
+      sections:rel_to_oxygen.contents,
+      sections:sample_type.contents,
+      sections:tissue.contents,
+      sections:trophic_level.contents
     </columns>
     <headers>
       "ACCESSION",
       "TITLE",
       "TAXID",
       "ORGANISM",
-      "ISOLATION SOURCE",
+      "BIOTIC_RELATIONSHIP",
+      "DISEASE",
+      "ENV_BIOME",
+      "ENV_FEATURE",
+      "ENV_MATERIAL",
+      "ENV_PACKAGE",
       "HOST",
-      "GEOGRAPHICAL LOCATION",
-      "LATITUDE LONGITUDE"
+      "HOST_SEX",
+      "HOST_TISSUE_SAMPLED",
+      "ISOLATION_SOURCE",
+      "PATHOGENICITY",
+      "PLANT_PRODUCT",
+      "REL_TO_OXYGEN",
+      "SAMPLE_TYPE",
+      "TISSUE",
+      "TROPHIC_LEVEL"
     </headers>
   </table>
-
 </alvisnlp-plan>
